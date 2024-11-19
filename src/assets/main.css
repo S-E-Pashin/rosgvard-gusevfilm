@@ -1,0 +1,71 @@
+/*@import './base.css';*/
+@import './fonts/inter.css';
+
+/*#app {*/
+/*  max-width: 1280px;*/
+/*  margin: 0 auto;*/
+/*  padding: 2rem;*/
+/*  font-weight: normal;*/
+/*}*/
+
+/*a,*/
+/*.green {*/
+/*  text-decoration: none;*/
+/*  color: hsla(160, 100%, 37%, 1);*/
+/*  transition: 0.4s;*/
+/*  padding: 3px;*/
+/*}*/
+
+/*@media (hover: hover) {*/
+/*  a:hover {*/
+/*    background-color: hsla(160, 100%, 37%, 0.2);*/
+/*  }*/
+/*}*/
+
+/*@media (min-width: 1024px) {*/
+
+/*}*/
+
+:root, * {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html {
+  /*box-sizing: border-box;*/
+  /*display: block;*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(255, 255, 255);;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  /*display: grid;*/
+  /*grid-template-columns: 1fr 1fr;*/
+  /*padding: 0 2rem;*/
+}
